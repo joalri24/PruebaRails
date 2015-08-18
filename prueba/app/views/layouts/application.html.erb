@@ -13,7 +13,8 @@
       <header><!-- header -->
         <h1><a href="#">Cowboy Up</a></h1>
         <h2>Where the buffalo roam</h2>
-        <img src="images/cowboyup.jpg" width="940" height="200" alt=""><!-- header image -->
+        <%= image_tag 'cowboyup.jpg', size: '940x200', alt: "Lagarto's a cowboy"  %>
+        <!--<img src="images/cowboyup.jpg" width="940" height="200" alt=""><!-- header image -->
       </header><!-- end of header -->
 
       <nav><!-- top nav -->
@@ -66,8 +67,10 @@
           </ul>
 
           <h3>Our Sponsors</h3>
-          <img src="images/ad125.jpg" alt="" /> <img src="images/ad125.jpg" alt="" /><br />
-          <img src="images/ad125.jpg" alt="" /> <img src="images/ad125.jpg" alt="" /><br /><br />
+          <%= image_tag 'ad125.jpg', alt: '' %>
+          <%= image_tag 'ad125.jpg', alt: '' %>
+          <!--<img src="images/ad125.jpg" alt="" /> <img src="images/ad125.jpg" alt="" /><br />
+          <img src="images/ad125.jpg" alt="" /> <img src="images/ad125.jpg" alt="" /><br /><br /> -->
 
           <h3>Connect With Us</h3>
           <ul>
