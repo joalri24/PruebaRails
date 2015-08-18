@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'lagarto/teach'
+  get 'lagarto/speak'
+  get 'lagarto/dig'
+
   get 'say/hello'
   get 'say/goodbye'
   get 'say/something'
