@@ -17,34 +17,7 @@
         <!--<img src="images/cowboyup.jpg" width="940" height="200" alt=""><!-- header image -->
       </header><!-- end of header -->
 
-      <nav><!-- top nav -->
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a>
-              <ul>
-                <li><%= link_to 'Teach Lagarto', lagarto_teach_path %></li>
-                <li><a href="#">History</a></li>
-                <li><a href="">Vision</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Products</a>
-              <ul>
-                <li><a href="#">Spurs</a></li>
-                <li><a href="#">Chaps</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Services</a>
-              <ul>
-                <li><a href="#">Rodeos</a></li>
-                <li><a href="#">Wrangling</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav><!-- end of top nav -->
-
+      <%= render :partial => 'shared/nav' %>
 
       <section id="main"><!-- #main content and sidebar area -->
         <section id="container"><!-- #container -->
