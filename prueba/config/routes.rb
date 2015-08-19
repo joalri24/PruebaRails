@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+
+  resources :animals
+  resources :lions, controller: 'animal', type: 'Lion'
+  resources :meerkats, controller: 'animal', type: 'Meerkat'
+
+  get 'animal/index'
+
+  get 'animal/show'
+
+  get 'animal/new'
+
+  get 'animal/edit'
+
+  get 'animal/create'
+
+  get 'animal/updte'
+
+  get 'animal/destroy'
+
   get 'page/home'
 
   get 'page/about_us'
@@ -29,7 +48,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'animal#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
